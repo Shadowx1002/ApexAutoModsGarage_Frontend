@@ -1,3 +1,34 @@
+/* ✅ Import Fonts FIRST */
+@import url("https://fonts.googleapis.com/css2?family=Judson:wght@400;700&family=Kaushan+Script&display=swap");
+
+/* ✅ Tailwind base */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ✅ Custom Theme */
+@theme {
+  --color-primary: #faf0e6;
+  --color-new: #cbe4de;
+  --color-secondary: #37353e;
+  --color-accent: #f77603;
+  --color-new2: #eeeeee;
+
+  /* default body */
+  --font-sans: "Libre Baskerville", serif;
+
+  /* custom heading */
+  --font-kaushan: "Kaushan Script", cursive;
+
+  /* 🎯 Add Judson font here too */
+  --font-judson: "Judson", serif;
+}
+
+/* ✅ Utility classes */
+.font-judson {
+  font-family: "Judson", serif;
+}
+
+.font-kaushan {
+  font-family: "Kaushan Script", cursive;
+}
